@@ -15,7 +15,7 @@ export default function Navbar() {
             <Link href={'#'} className="hover:text-zinc-500 transition-colors duration-300">Blogs</Link>
             <Link href={'#'} className="hover:text-zinc-500 transition-colors duration-300">Contact Us</Link>
           </div>
-          <button className="shadow-md hover:shadow-lg transition-all cursor-pointer rounded-xl px-4 py-3 border border-zinc-200 font-semibold">Get Started</button>
+          <button className="shadow-md hover:shadow-lg bg-white transition-all cursor-pointer rounded-xl px-4 py-3 border border-zinc-200 font-semibold">Get Started</button>
         </nav>
     )
 }
