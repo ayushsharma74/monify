@@ -37,7 +37,7 @@ export default function HeroSection() {
             >Start Building
             <ArrowRight size={20} />
             </button>
-            <button className="shadow-xl hover:shadow-lg transition-all cursor-pointer rounded-xl px-4 py-3 border border-zinc-200 font-semibold">Talk to Us</button>
+            <button className="shadow-xl hover:shadow-lg transition-all cursor-pointer rounded-xl px-4 py-3 border border-zinc-200 font-semibold bg-white">Talk to Us</button>
             </motion.div>
           </div>
           
