@@ -7,10 +7,13 @@ export default function Footer() {
         <footer 
         style={{
             backgroundImage: "url('/BgImages/footer.png')",
+            backgroundPosition: 'top',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
         }}
-        className={`${manrope.className} relative tracking-tight h-screen bg-cover bg-center flex justify-center items-center flex-col  gap-10`}
+        className={`${manrope.className} relative tracking-tight h-[60rem] md:h-screen bg-cover bg-center flex justify-center items-center flex-col  gap-10`}
         >
-            <div className="absolute top-32 flex w-full flex-col md:flex-row lg:flex-row px-10  justify-center gap-40 ">
+            <div className="absolute top-10 md:top-32 flex w-full flex-col-reverse md:flex-row lg:flex-row px-10  justify-center gap-16 md:gap-40  ">
             <div className="flex flex-col gap-4">
                 <h2 className="font-semibold text-[#D1A1D3]">Newsletter</h2>
                 <h1 className="text-[#8C2891] font-bold text-3xl">Stay Updated with Monify!</h1>

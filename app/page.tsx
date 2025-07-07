@@ -16,7 +16,7 @@ export default function Home() {
   
 
   return (
-    <main className={`line-background h-screen`}>
+    <main className={`line-background overflow-x-hidden`}>
         <HeroSection />
         <TakeChargeOfMoney />
         <TakeControlOfFinances />

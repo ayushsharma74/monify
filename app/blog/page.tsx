@@ -40,7 +40,7 @@ export default function Page() {
     ];
     return (
         <>
-            <div className="my-20 max-w-5xl mx-auto">
+            <div className="my-20 max-w-5xl mx-auto px-4">
                 <h1 className={`${geistSans.className} text-center text-7xl font-bold tracking-tight pt-20 pb-6 `}>
                     <TextBlurFade text="Insights & Blogs" spaceSplitting={true} />
                 </h1>

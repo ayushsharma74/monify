@@ -5,17 +5,19 @@ import { useEffect, useState } from "react";
 import {AnimatePresence, motion} from "motion/react";
 import ElementBlurFade from "../ElementBlurFade";
 import TextBlurFade from "../TextBlurFade";
+import { setTimeout } from "timers/promises";
 
 export default function TakeControlOfFinances() {
     
     return (
         <section>
-            <div className={`${manrope.className} text-6xl font-bold text-center tracking-tighter`}>
+            <div className={`${manrope.className} text-5xl md:text-6xl font-bold text-center tracking-tighter`}>
                 <div className="text-sm   flex items-center justify-center my-4">
                 <ElementBlurFade delay={0.4}>
                     <h1 className="bg-white px-4 py-2 rounded-full shadow-md  tracking-normal border border-zinc-200"> Features</h1>
                     </ElementBlurFade>
                 </div>
+                
                 <h1><TextBlurFade text="Take Control Of" spaceSplitting={false} /></h1>
                 <h1><TextBlurFade text="Your Finances" spaceSplitting={false} /></h1>
             </div>
@@ -62,6 +64,9 @@ function FeaturesCard() {
 
     useEffect(() => {
         const data = TabContent.find((item) => item.tab === activeTab)
+        // setInterval(() => {
+            
+        // }, 1000);
         if (data) {
             setActiveData(data)
         }
@@ -70,7 +75,7 @@ function FeaturesCard() {
 
     return (
         
-        <div className="grid grid-cols-6 gap-7 bg-[#FEF2FF] p-5 rounded-2xl min-h-[300px]">
+        <div className="grid grid-cols-6 gap-7 bg-[#FEF2FF] p-5 rounded-2xl min-h-[300px] mx-4 md:m-0">
         
             {/* Left Content with inner grid */}
             <div className="col-span-3 row-span-5 grid grid-rows-[1fr_auto] py-4">
@@ -103,7 +108,7 @@ function FeaturesCard() {
             </div>
 
             {/* Right side visual block */}
-            <div className="col-span-3 row-span-5 bg-[#FBA9FF] rounded-2xl flex items-center justify-center">
+            <div className="col-span-3 row-span-5 bg-[#FBA9FF] rounded-2xl hidden md:flex items-center justify-center">
                 <div className="text-white text-lg font-bold p-6">
                     <Image src={activeData.image} alt="img1" width={300} height={300} />
                 </div>

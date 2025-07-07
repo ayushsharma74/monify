@@ -1,5 +1,7 @@
 import { manrope } from "@/fonts/font";
 import Image from "next/image";
+import ElementBlurFade from "../ElementBlurFade";
+import TextBlurFade from "../TextBlurFade";
 
 export default function Testimonials() {
     const TestimonialData = [
@@ -41,23 +43,25 @@ export default function Testimonials() {
         <section>
             <div className="py-20 pb-32">
 
-                <div className={`${manrope.className} text-6xl font-bold text-center tracking-tighter`}>
+                <div className={`${manrope.className} text-5xl md:text-6xl font-bold text-center tracking-tighter`}>
                     <div className="text-sm   flex items-center justify-center my-4">
                         <h1 className="bg-white px-4 py-2 rounded-full shadow-md  tracking-normal border border-zinc-200"> Testimonials</h1>
                     </div>
-                    <h1>What Our Users</h1>
-                    <h1>Are Saying</h1>
+                    <h1><TextBlurFade text="What Our Users" spaceSplitting={true} /></h1>
+                    <h1><TextBlurFade text="Are Saying" spaceSplitting={true} /></h1>
                 </div>
                 <div className="font-semibold text-zinc-500 tracking-tight text-center mt-4">
-                    <p>Don’t just take our word for it – hear from our </p>
-                    <p>satisfied customers.</p>
+                    <p><TextBlurFade text="Don’t just take our word for it – hear from our " spaceSplitting={true} /></p>
+                    <p><TextBlurFade text="satisfied customers." spaceSplitting={true} /></p>
                 </div>
             </div>
 
+        <ElementBlurFade delay={0.4}>
 
-            <div className="grid grid-cols-3 grid-rows-2 gap-4 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl px-4 mx-auto">
                 {TestimonialData.map(({ title, image, description }) => <TestimonialCard key={title} title={title} image={image} description={description} />)}
             </div>
+        </ElementBlurFade>
             <div className="flex items-center justify-center py-12">
 
             <button className="shadow-md hover:shadow-lg bg-white transition-all cursor-pointer rounded-xl px-4 py-2 border border-zinc-200 font-semibold">See more</button>
