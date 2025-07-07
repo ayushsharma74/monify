@@ -2,6 +2,7 @@
 
 import Achievements from "@/components/Landing/Achievements";
 import Faq from "@/components/Landing/faq";
+import Footer from "@/components/Landing/Footer";
 import HeroSection from "@/components/Landing/HeroSection"
 import HowMonifyWorks from "@/components/Landing/HowMonifyWorks";
 import Pricing from "@/components/Landing/Pricing";
@@ -24,6 +25,7 @@ export default function Home() {
         <Testimonials />
         <Pricing />
         <Faq />
+        <Footer />
     </main>
   );
 }

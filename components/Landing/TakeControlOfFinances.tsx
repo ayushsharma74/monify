@@ -3,24 +3,31 @@ import { geistSans, manrope } from "@/fonts/font";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import {AnimatePresence, motion} from "motion/react";
+import ElementBlurFade from "../ElementBlurFade";
+import TextBlurFade from "../TextBlurFade";
+
 export default function TakeControlOfFinances() {
     
     return (
         <section>
             <div className={`${manrope.className} text-6xl font-bold text-center tracking-tighter`}>
                 <div className="text-sm   flex items-center justify-center my-4">
+                <ElementBlurFade delay={0.4}>
                     <h1 className="bg-white px-4 py-2 rounded-full shadow-md  tracking-normal border border-zinc-200"> Features</h1>
+                    </ElementBlurFade>
                 </div>
-                <h1>Take Control Of</h1>
-                <h1>Your Finances</h1>
+                <h1><TextBlurFade text="Take Control Of" spaceSplitting={false} /></h1>
+                <h1><TextBlurFade text="Your Finances" spaceSplitting={false} /></h1>
             </div>
             <div className="font-normal text-zinc-500 tracking-tight text-center mt-4">
 
-                <p>Try a new, better way of building customer-facing</p>
-                <p>integrations for Saas products.</p>
+                <p><TextBlurFade text="Try a new, better way of building customer-facing" spaceSplitting={true} /></p>
+                <p><TextBlurFade text="integrations for Saas products." spaceSplitting={false} /> </p>
             </div>
             <div className="max-w-5xl mx-auto my-6">
+            <ElementBlurFade delay={0.6}>
                     <FeaturesCard />
+            </ElementBlurFade>
             </div>
         </section>
     )

@@ -1,6 +1,7 @@
 import { manrope } from "@/fonts/font";
 import { ChevronUp } from "lucide-react";
 import { useRef, useState } from "react";
+import TextBlurFade from "../TextBlurFade";
 
 export default function Faq() {
     const faqs = [
@@ -28,13 +29,13 @@ export default function Faq() {
       
 
     return (
-        <section>
+        <section className="py-20">
             <div className={`${manrope.className} text-6xl font-bold text-center tracking-tighter`}>
                 <div className="text-sm   flex items-center justify-center my-4">
-                    <h1 className="bg-white px-4 py-2 rounded-full shadow-md  tracking-normal border border-zinc-200"> FAQ</h1>
+                    <h1 className="bg-white px-4 py-2 rounded-full shadow-md  tracking-normal border border-zinc-200">FAQ</h1>
                 </div>
-                <h1>Frequently Asked</h1>
-                <h1>Questions</h1>
+                <h1><TextBlurFade text="Frequently Asked" spaceSplitting={false} /> </h1>
+                <h1><TextBlurFade text="Questions" spaceSplitting={false} /> </h1>
             </div>
             <div className="max-w-md mx-auto my-6">
                 {faqs.map((faq, index) => (
@@ -47,7 +48,7 @@ export default function Faq() {
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
     const [open, setOpen] = useState(false);
-    const contentRef = useRef(null);
+    const contentRef = useRef<HTMLDivElement>(null);
   
     return (
       <div className={`${manrope.className} border border-zinc-300 rounded-xl overflow-hidden transition-all  my-3 hover:scale-101 active:scale-96`}>
