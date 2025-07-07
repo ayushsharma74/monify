@@ -1,4 +1,5 @@
 'use client'
+import ElementBlurFade from "@/components/ElementBlurFade"
 import Faq from "@/components/Landing/faq"
 import Footer from "@/components/Landing/Footer"
 import TextBlurFade from "@/components/TextBlurFade"
@@ -14,9 +15,11 @@ export default function Page() {
             <h1 className="font-semibold text-5xl md:text-7xl tracking-tighter text-center"><TextBlurFade text="Contact Us" spaceSplitting={false} /></h1>
             <p className="text-center text-zinc-500 tracking-tight font-medium"><TextBlurFade text="We’re excited to connect with you! Whether you have a question about our services, need assistance with your marketing strategy, or are ready to take the next step in your growth journey, our team is here to help." spaceSplitting={true} /></p>
             </div>
+            <ElementBlurFade delay={0.4}>
             <div className="max-w-5xl px-4 mx-auto">
             <ContactCard />
             </div>
+            </ElementBlurFade>
             <div className="my-20">
 
             <Faq />

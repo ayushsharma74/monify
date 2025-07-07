@@ -4,6 +4,7 @@ import TextBlurFade from "@/components/TextBlurFade";
 import { geistSans, manrope } from "@/fonts/font"
 import Image from "next/image"
 import { motion } from 'motion/react'
+import Link from "next/link";
 
 export default function Page() {
     const blogData = [
@@ -46,7 +47,10 @@ export default function Page() {
                 </h1>
                 <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.8 }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
                     {blogData.map((b, i) => (
-                        <BlogCard key={i} title={b.title} tag={b.tag} date={b.date} image={b.image} />
+                        <Link href={'/blog/blog1'} key={i} className="cursor-pointer">
+
+                            <BlogCard  title={b.title} tag={b.tag} date={b.date} image={b.image} />
+                        </Link>
                     ))}
                 </motion.div>
             </div>
@@ -67,13 +71,15 @@ function BlogCard({
     image: string
 }) {
     return (
-        <div className="rounded-xl overflow-hidden bg-[#F9EDFA]">
+        <motion.div
+        whileHover={{ y: -2 }}
+        className="rounded-xl overflow-hidden bg-[#F9EDFA] cursor-pointer">
             <Image src={image} alt="image" width={400} height={400} className="rounded-2xl" />
             <div className={`${manrope.className} tracking-tight p-3 flex flex-col gap-3 `}>
                 <span className="bg-[#FBA7FF] px-2 w-fit py-1 rounded-full font-semibold text-sm text-[#8C2891]">{tag}</span>
                 <h2 className="font-bold text-2xl">{title}</h2>
                 <p className="font-semibold text-zinc-500">{date}</p>
             </div>
-        </div>
+        </motion.div>
     )
 }

@@ -31,7 +31,7 @@ export default function Page() {
                 >
                     <Image src={"/aboutlogo.png"} alt="image" width={60} height={60}/>
                 </motion.div>
-                <h1 className="font-semibold text-7xl tracking-tighter text-center"><TextBlurFade text="About Monify" spaceSplitting={false} /></h1>
+                <h1 className="font-semibold text-5xl md:text-7xl tracking-tighter text-center"><TextBlurFade text="About Monify" spaceSplitting={false} /></h1>
                 <p className="text-center text-zinc-500 tracking-tight font-medium"><TextBlurFade text="At Monify, our mission is to simplify the way people manage their finances. We believe that everyone should have the tools to take control of their money, achieve their financial goals, and live with less stress." spaceSplitting={true} /></p>
                 <div className="max-w-5xl my-12">
 
