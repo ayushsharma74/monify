@@ -7,32 +7,32 @@ export default function Testimonials() {
     const TestimonialData = [
         {
             title: "Anjela",
-            image: 'https://pbs.twimg.com/profile_images/1938708596046626816/PI2DJ5Bj_400x400.jpg',
+            image: '/TestImgs/image1.png',
             description: "Monify made budgeting effortless, and I’m finally sticking to my savings goals!"
         },
         {
             title: "Rahul",
-            image: 'https://pbs.twimg.com/profile_images/1938708596046626816/PI2DJ5Bj_400x400.jpg',
+            image: '/TestImgs/image2.png',
             description: "This app helped me visualize my spending habits like never before. Highly recommend!"
         },
         {
             title: "Lena",
-            image: 'https://pbs.twimg.com/profile_images/1938708596046626816/PI2DJ5Bj_400x400.jpg',
+            image: '/TestImgs/image3.png',
             description: "Tracking my expenses has never been this easy. Monify truly changed the game for me!"
         },
         {
             title: "James",
-            image: 'https://pbs.twimg.com/profile_images/1938708596046626816/PI2DJ5Bj_400x400.jpg',
+            image: '/TestImgs/image4.png',
             description: "Simple, clean, and super effective. I love how Monify keeps me financially on track."
         },
         {
             title: "Aisha",
-            image: 'https://pbs.twimg.com/profile_images/1938708596046626816/PI2DJ5Bj_400x400.jpg',
+            image: '/TestImgs/image5.png',
             description: "I’ve tried many apps, but Monify actually made me excited to manage my money!"
         },
         {
             title: "Carlos",
-            image: 'https://pbs.twimg.com/profile_images/1938708596046626816/PI2DJ5Bj_400x400.jpg',
+            image: '/TestImgs/image6.png',
             description: "Budgeting used to be a chore, but now it feels like a win every day thanks to Monify."
         }
     ];

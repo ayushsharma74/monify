@@ -41,7 +41,7 @@ export default function Page() {
     return (
         <>
             <div className="my-20 max-w-5xl mx-auto px-4">
-                <h1 className={`${geistSans.className} text-center text-7xl font-bold tracking-tight pt-20 pb-6 `}>
+                <h1 className={`${geistSans.className} text-center text-5xl md:text-7xl font-bold tracking-tight pt-20 pb-6 `}>
                     <TextBlurFade text="Insights & Blogs" spaceSplitting={true} />
                 </h1>
                 <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.8 }} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">

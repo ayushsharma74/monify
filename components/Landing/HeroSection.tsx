@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <section className="relative w-full ">
       <div className="min-h-screen max-w-6xl mx-auto flex items-center justify-center px-4">
-        <div className="flex flex-col px-4 gap-6 absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-[90%] md:w-[70%] lg:w-[50%]">
+        <div className="flex flex-col px-4 gap-6 absolute top-1/4 left-1/2 md:left-5/9 lg:left-4/9 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-[90%] md:w-[70%] lg:w-[50%]">
           {/* Title Text */}
           <div className={`${plusJakartaSans.className} font-bold`}>
             <div className="text-5xl  md:text-6xl lg:text-7xl tracking-tight">
@@ -44,6 +44,9 @@ export default function HeroSection() {
           >
             <button
               className="relative shadow-md hover:shadow-lg transition-all cursor-pointer rounded-xl hover:rounded-2xl px-6 py-3 bg-black text-white font-semibold flex gap-2 items-center justify-center overflow-hidden"
+              style={{
+                boxShadow: '8px 2px 17px 1px rgba(0, 0, 255, 0.5), -8px 1px 20px 1px rgba(255, 0, 150, 0.5)',
+              }}
             >
               <span className="relative z-10">Start Building</span>
               <ArrowRight size={20} />
